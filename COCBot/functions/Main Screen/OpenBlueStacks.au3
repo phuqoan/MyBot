@@ -91,6 +91,7 @@ Func waitMainScreenMini()
 			If CheckObstacles() Then $i = 0 ;See if there is anything in the way of mainscreen
 		Else
 			SetLog("CoC main window took " & Round(TimerDiff($hTimer) / 1000, 2) & " seconds", $COLOR_GREEN)
+			MouseMove(1,1) ; mouse move out from BS main screen for AutoStart working
 			Return
 		EndIf
 		_StatusUpdateTime($hTimer, "Main Screen")
