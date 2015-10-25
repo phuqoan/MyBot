@@ -146,7 +146,7 @@ Func DropTrophy()
 									SetLog("Deploying 1 Minion", $COLOR_BLUE)
 								Case Else
 									$itxtMaxTrophy += 50
-									SetLog("You Don´t have Tier 1/2 Troops, exit of dropping Trophies", $COLOR_BLUE) ; preventing of deploying Tier 2/3 expensive troops
+									SetLog("You DonÂ´t have Tier 1/2 Troops, exit of dropping Trophies", $COLOR_BLUE) ; preventing of deploying Tier 2/3 expensive troops
 							EndSelect
 							SetTrophyLoss()
 							If _Sleep($iDelayDropTrophy1) Then ExitLoop
@@ -160,7 +160,7 @@ Func DropTrophy()
 					EndIf
 				WEnd
 			Else
-				Setlog("Drop Thropies: Army is < 70% capacity")
+				Setlog("Drop Trophies: Army is < 70% capacity")
 				Setlog("You selected Option Attack Dead Base if found..")
 			EndIf
 
@@ -262,7 +262,7 @@ Func DropTrophy()
 								SetLog("Deploying 1 Minion", $COLOR_BLUE)
 							Case Else
 								$itxtMaxTrophy += 50
-								SetLog("You don´t have Tier 1/2 Troops, exit of dropping Trophies", $COLOR_BLUE) ; preventing of deploying Tier 2/3 expensive troops
+								SetLog("You donÂ´t have Tier 1/2 Troops, exit of dropping Trophies", $COLOR_BLUE) ; preventing of deploying Tier 2/3 expensive troops
 						EndSelect
 						SetTrophyLoss()
 						If _Sleep($iDelayDropTrophy1) Then ExitLoop
