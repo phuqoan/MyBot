@@ -186,7 +186,7 @@ Func QueenUpgrade()
 				SetLog("Queen Upgrade complete", $COLOR_GREEN)
 				If _Sleep($iDelayUpgradeHero2) Then Return ; Wait for window to close
 				$iNbrOfHeroesUpped += 1
-				$iCostDElixirHero += $aQueenUpgCost[$aHeroLevel - 1] * 1000
+				$iCostDElixirHero += $aQueenUpgCost[$aHeroLevel] * 1000
 				UpdateStats()
 			EndIf
 		Else
@@ -285,7 +285,7 @@ Func KingUpgrade()
 				SetLog("King Upgrade complete", $COLOR_GREEN)
 				If _Sleep($iDelayUpgradeHero2) Then Return ; Wait for window to close
 				$iNbrOfHeroesUpped += 1
-				$iCostDElixirHero += $aKingUpgCost[$aHeroLevel - 1] * 1000
+				$iCostDElixirHero += $aKingUpgCost[$aHeroLevel] * 1000
 				UpdateStats()
 			EndIf
 		Else
